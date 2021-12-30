@@ -1,5 +1,5 @@
 ## Usage
 
 ```tozihat
-A scientific calculator made by Amirparsa Ziari©
+A simple calculator made by my friend amirparsaziari©
 ```
