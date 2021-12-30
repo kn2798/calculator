@@ -1,0 +1,26 @@
+<html>
+    <style>
+    body{
+        margin: 0px;
+        padding: 50px 0px;
+        background: radial-gradient(#fbcbc9, #fbcbc9, #fbcbc9)no-repeat fixed;
+        font-family: cursive;
+        font-size: 30px;
+        color: #FF5722;
+    }
+    </style>
+<body>
+    <h1 align="center">This page was viewed <i align="center" id="count">0</i> Times</h1>
+    <script>
+            const countEl = document.getElementById('count');
+            updateVisitCount();
+            function updateVisitCount() {
+            fetch('https://api.countapi.xyz/update/sci-calc/amirparsaziari/?amount=1')
+            .then(res => res.json())
+            .then(res => {
+            countEl.innerHTML = res.value;
+        })
+        }
+    </script>
+</body>
+</html>
